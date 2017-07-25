@@ -8,4 +8,4 @@ if (cat $1/scans/nmap.txt | grep 'try -Pn')
 		nmap $1 -Pn -sV
 fi
 
-cat $1/scans/nmap.txt | grep open > services.txt
+cat $1/scans/nmap.txt | grep open > $1/services.txt
