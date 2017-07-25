@@ -28,7 +28,7 @@ def prepScans():
 def nmap():
 	for targets in arg.ip:
 		print '[*] Scanning ' + targets
-		subprocess.call(['./.esP1ck1ngscd.sh', targets])
+		subprocess.call(['./.ezP1ck1ngscd.sh', targets])
 
 
 
