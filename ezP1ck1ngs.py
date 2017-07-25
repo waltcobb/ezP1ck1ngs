@@ -32,12 +32,12 @@ def nmap():
 
 def searchsploit():
 	for targets in arg.ip:
-		print '[*] Searching for possible sploits ' + targets
+		print '[*] Searching for possible sploits' + targets
 		subprocess.call(['./.ezP1ck1ngsSearchSploit.sh', targets])
 
 
 
 prepScans()
 nmap()
-
+searchsploit()
 
