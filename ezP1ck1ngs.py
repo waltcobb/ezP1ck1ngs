@@ -22,10 +22,15 @@ def prepScans():
 		makeDir(targets)
 		makeDir(targets + '/scans')
 
+#runs nmap on targets, writes output to $target/scans/nmap.txt
+#also writes list of open ports and services to $target for further
+#use by other tools
 def nmap():
 	for targets in arg.ip:
 		print '[*] Scanning ' + targets
-		subprocess.call(['./.esP1ck1ngs.sh', targets])
+		subprocess.call(['./.esP1ck1ngscd.sh', targets])
+
+
 
 
 prepScans()
