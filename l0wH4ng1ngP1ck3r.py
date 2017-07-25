@@ -24,11 +24,8 @@ def prepScans():
 
 def nmap():
 	for targets in arg.ip:
-		print 'Scanning ' + targets
-		file = targets + '/scans/nmap.txt'
-		with open(file, 'a') as f:
-			subprocess.call(['./.l0wh4ngNmap.sh', targets],stdout=f)
-
+		print '[*] Scanning ' + targets
+		subprocess.call(['./.l0wh4ngNmap.sh', targets])
 
 
 prepScans()
