@@ -28,8 +28,12 @@ def prepScans():
 def nmap():
 	for targets in arg.ip:
 		print '[*] Scanning ' + targets
-		subprocess.call(['./.ezP1ck1ngs.sh', targets])
+		subprocess.call(['./.ezP1ck1ngsNmap.sh', targets])
 
+def searchsploit():
+	for targets in arg.ip:
+		print '[*] Searching for possible sploits ' + targets
+		subprocess.call(['./.ezP1ck1ngsSearchSploit.sh', targets])
 
 
 
